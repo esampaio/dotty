@@ -1,0 +1,48 @@
+#!/usr/bin/env ruby
+
+git_bundles = [ 
+  "git://github.com/tpope/vim-endwise.git",
+  "git://github.com/tpope/vim-unimpaired.git",
+  "git://github.com/nanotech/jellybeans.vim.git",
+  "git://github.com/Raimondi/delimitMate.git",
+  "git://github.com/telemachus/vim-varia.git",
+  "git://github.com/tpope/vim-cucumber.git",
+  "git://github.com/tpope/vim-fugitive.git",
+  "git://github.com/tpope/vim-git.git",
+  "git://github.com/tpope/vim-haml.git",
+  "git://github.com/tpope/vim-markdown.git",
+  "git://github.com/tpope/vim-rails.git",
+  "git://github.com/tpope/vim-repeat.git",
+  "git://github.com/tpope/vim-surround.git",
+  "git://github.com/tsaleh/vim-shoulda.git",
+  "git://github.com/tsaleh/vim-supertab.git",
+  "git://github.com/jmartindf/vim-tcomment.git",
+  "git://github.com/vim-ruby/vim-ruby.git",
+  "git://github.com/mattn/gist-vim.git",
+  "git://github.com/nono/jquery.vim.git",
+  "git://github.com/beyondwords/vim-twig.git",
+  "git://github.com/vim-scripts/VimClojure.git",
+  "git://github.com/kchmck/vim-coffee-script.git",
+  "git://github.com/myusuf3/numbers.vim.git",
+  "git://github.com/tpope/vim-liquid.git",
+  "git://github.com/scrooloose/syntastic.git",
+  "git://github.com/kien/ctrlp.vim.git",
+  "git://github.com/groenewege/vim-less.git"
+]
+
+require 'fileutils'
+require 'open-uri'
+
+bundles_dir = File.join(ENV['HOME'],".vim", "bundle")
+
+FileUtils.cd(bundles_dir)
+
+puts "Trashing everything (lookout!)"
+Dir["*"].each {|d| FileUtils.rm_rf d }
+
+git_bundles.each do |url|
+  dir = url.split('/').last.sub(/\.git$/, '')
+  puts "  Unpacking #{url} into #{dir}"
+  `git clone #{url} #{dir}`
+  FileUtils.rm_rf(File.join(dir, ".git"))
+end
