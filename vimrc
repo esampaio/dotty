@@ -101,13 +101,6 @@ function! RenameFile()
 endfunction
 map <leader>n :call RenameFile()<cr>
 
-" Settings for FuzzyFinderTextMate
-let g:fuzzy_ignore = "*.log"
-let g:fuzzy_matching_limit = 70
-
-" map <leader>t :FufFileWithFullCwd<CR>
-map <leader>b :FufBuffer<CR>
-
 " CtrlP Customization
 map <leader>b :CtrlPBuffer<CR>
 map <leader>f :CtrlP<CR>
