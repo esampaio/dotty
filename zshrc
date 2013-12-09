@@ -1,7 +1,7 @@
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_THEME="sorin"
 
-plugins=(git rvm rails3 ruby brew bundler cloudapp heroku osx pow)
+plugins=(git rvm rails ruby brew cloudapp heroku osx pow)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -12,9 +12,9 @@ export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # brew
-export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # PHP binaries
-export PATH="$PATH:/usr/lib/pear/bin:/usr/lib/pear/share/pear/PHP"
+export PATH="$(brew --prefix php53)/bin:$PATH"
 
 eval "$(rbenv init -)"

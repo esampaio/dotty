@@ -27,7 +27,8 @@ git_bundles = [
   "git://github.com/tpope/vim-liquid.git",
   "git://github.com/scrooloose/syntastic.git",
   "git://github.com/kien/ctrlp.vim.git",
-  "git://github.com/groenewege/vim-less.git"
+  "git://github.com/groenewege/vim-less.git",
+  "git://github.com/rodjek/vim-puppet.git"
 ]
 
 require 'fileutils'
