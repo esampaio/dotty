@@ -7,7 +7,9 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%{exists('*CapsLockStatusline')?CapsLockSt
 " Syntax
 syntax on
 colorscheme jellybeans
+let g:hybrid_use_iTerm_colors=1
 :set t_Co=256
+colorscheme hybrid
 set hlsearch
 set history=10000
 set showcmd
