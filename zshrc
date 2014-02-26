@@ -20,4 +20,8 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 # PHP binaries
 export PATH="$(brew --prefix php53)/bin:$PATH"
 
+# golang
+export GOPATH="$HOME/Dropbox/projects/go"
+export PATH="/usr/local/go/bin:$GOPATH/bin:$PATH"
+
 eval "$(rbenv init -)"
