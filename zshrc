@@ -4,7 +4,7 @@ export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-plugins=(git rvm rails ruby brew cloudapp heroku osx pow)
+plugins=(sudo git rvm rails ruby brew cloudapp heroku osx pow)
 
 source $ZSH/oh-my-zsh.sh
 
