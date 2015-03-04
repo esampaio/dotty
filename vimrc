@@ -115,6 +115,15 @@ let g:ctrlp_custom_ignore = {
 let g:rubytest_cmd_test = "ruby -Itest %p"
 map <Leader>t <Plug>RubyFileRun 
 
+" ctags
+set tags=./tags;,~/.vimtags
+" easytags defaults
+let g:easytags_events = ['BufReadPost', 'BufWritePost']
+let g:easytags_async = 1
+let g:easytags_dynamic_files = 2
+let g:easytags_resolve_links = 1
+let g:easytags_suppress_ctags_warning = 1"
+
 " Learn how to use vim properly
 map <Left> :echo "no!"<cr>
 map <Right> :echo "no!"<cr>
