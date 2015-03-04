@@ -1,5 +1,5 @@
 # Install tools
-brew install ant apple-gcc42 ctags imagemagick mercurial openssl pwgen tmux vim watch zlib node
+brew install ant apple-gcc42 ctags imagemagick mercurial openssl pwgen tmux vim watch zlib node ctags-exuberant
 
 # Install ruby dependencies
 brew install rbenv rbenv-gemset rbenv-gem-rehash ruby-build
