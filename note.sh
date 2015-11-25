@@ -5,7 +5,7 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install tools
-brew install ant apple-gcc42 imagemagick mercurial openssl pwgen tmux vim watch zlib node
+brew install ant apple-gcc42 imagemagick mercurial openssl pwgen tmux vim watch zlib node nvm
 
 # Install ruby dependencies
 brew install rbenv rbenv-gemset rbenv-gem-rehash ruby-build
