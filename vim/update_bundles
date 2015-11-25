@@ -11,10 +11,9 @@ git_bundles = [
   "git://github.com/bling/vim-airline.git",
   "git://github.com/Raimondi/delimitMate.git",
   "git://github.com/myusuf3/numbers.vim.git",
-  "git://github.com/telemachus/vim-varia.git",
   "git://github.com/mattn/gist-vim.git",
   "git://github.com/tsaleh/vim-supertab.git",
-  "git://github.com/jmartindf/vim-tcomment.git",
+  "git://github.com/tomtom/tcomment_vim.git",
   "git://github.com/tpope/vim-fugitive.git",
   "git://github.com/tpope/vim-git.git",
   "git://github.com/tpope/vim-repeat.git",
@@ -35,9 +34,8 @@ git_bundles = [
   "git://github.com/digitaltoad/vim-jade.git",
   "git://github.com/elixir-lang/vim-elixir.git",
   "git://github.com/mattreduce/vim-mix.git",
-
-  "git://github.com/xolox/vim-misc.git",
-  "git://github.com/xolox/vim-easytags.git"
+  "git://github.com/mxw/vim-jsx.git",
+  "git://github.com/elzr/vim-json.git"
 ]
 
 require 'fileutils'

@@ -7,8 +7,8 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%{exists('*CapsLockStatusline')?CapsLockSt
 " Syntax
 syntax on
 colorscheme jellybeans
-let g:hybrid_use_iTerm_colors=1
 :set t_Co=256
+set background=dark
 colorscheme hybrid
 set hlsearch
 set history=10000
@@ -114,15 +114,6 @@ let g:ctrlp_custom_ignore = {
 " vim-rubytest
 let g:rubytest_cmd_test = "ruby -Itest %p"
 map <Leader>t <Plug>RubyFileRun 
-
-" ctags
-set tags=./tags;,~/.vimtags
-" easytags defaults
-let g:easytags_events = ['BufReadPost', 'BufWritePost']
-let g:easytags_async = 1
-let g:easytags_dynamic_files = 2
-let g:easytags_resolve_links = 1
-let g:easytags_suppress_ctags_warning = 1"
 
 " Learn how to use vim properly
 map <Left> :echo "no!"<cr>
