@@ -4,7 +4,7 @@ export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-plugins=(sudo git rvm rails ruby brew cloudapp heroku osx pow)
+plugins=(sudo git rvm rails ruby brew cloudapp heroku osx pow pj)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -24,5 +24,7 @@ export PATH="/usr/local/go/bin:$GOPATH/bin:$PATH"
 # node
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+
+export PROJECT_PATHS=~/Dropbox/projects
 
 eval "$(rbenv init -)"
