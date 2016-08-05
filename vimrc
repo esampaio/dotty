@@ -41,6 +41,7 @@ filetype plugin indent on
 
 autocmd FileType css set smartindent
 autocmd FileType html set formatoptions+=tl
+autocmd Filetype gitcommit setlocal spell textwidth=72
 
 " Search
 set ignorecase
@@ -121,3 +122,6 @@ map <Right> :echo "no!"<cr>
 map <Up> :echo "no!"<cr>
 map <Down> :echo "no!"<cr>
 command! Wq :echo "no!"<cr>
+
+" allow airline to use powerline symbols
+let g:airline_powerline_fonts = 1
