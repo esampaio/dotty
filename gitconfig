@@ -38,3 +38,18 @@
   up = !git fetch origin && git rebase origin/master
   current = !git stash && git pull origin master && git stash pop
   pr = "!pullrequest() { if [ -n \"$1\" ]; then git branch > /dev/null 2>&1; if [ $? -eq 0 ]; then REPO=$(git config --get remote.origin.url); if [[ \"$REPO\" =~ \"github.com\" ]]; then if [[ \"$REPO\" =~ \"https\" ]]; then OWNER=$(echo $REPO | awk -F'/' '{print $4}'); else OWNER=$(echo $REPO | awk -F':' '{print $2}' | awk -F'/' '{print $1}'); fi; BRANCH=$(git rev-parse --abbrev-ref HEAD); echo \"hub pull-request -i $1 -b $OWNER:master -h $OWNER:$BRANCH\"; hub pull-request -i $1 -b $OWNER:master -h $OWNER:$BRANCH; else echo \"This is not a GitHub repo\"; fi; else echo \"You are not under a git repo\"; fi; else echo \"You have to provide one parameter with the issue number\"; fi }; pullrequest"
+[pager]
+  diff = diff-so-fancy | less --tabs=1,5 -RFX
+  show = diff-so-fancy | less --tabs=1,5 -RFX
+[color "diff"]
+  meta = white bold
+  commit = white bold
+  frag = magenta
+  old = red bold
+  new = green bold
+  whitespace = red reverse
+[color "diff-highlight"]
+  oldNormal = red
+  oldHighlight = red 52
+  newNormal = green
+  newHighlight = green 22
