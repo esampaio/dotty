@@ -125,3 +125,6 @@ command! Wq :echo "no!"<cr>
 
 " allow airline to use powerline symbols
 let g:airline_powerline_fonts = 1
+
+" toggle rainbow parentheses
+au VimEnter * RainbowParenthesesToggle

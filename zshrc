@@ -22,8 +22,11 @@ export GOPATH="$HOME/Dropbox/projects/go"
 export PATH="/usr/local/go/bin:$GOPATH/bin:$PATH"
 
 # node
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+
+# yarn
+export PATH="$PATH:`yarn global bin`"
 
 export PROJECT_PATHS=~/Dropbox/projects
 

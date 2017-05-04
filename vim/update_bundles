@@ -37,7 +37,18 @@ git_bundles = [
   "git://github.com/mattreduce/vim-mix.git",
   "git://github.com/mxw/vim-jsx.git",
   "git://github.com/elzr/vim-json.git",
-  "git://github.com/kylef/apiblueprint.vim.git"
+  "git://github.com/kylef/apiblueprint.vim.git",
+  "git://github.com/rust-lang/rust.vim.git",
+
+  "git://github.com/guns/vim-sexp.git",
+  "git://github.com/tpope/vim-sexp-mappings-for-regular-people.git",
+  "git://github.com/guns/vim-clojure-static.git",
+  "git://github.com/guns/vim-clojure-highlight.git",
+  "git://github.com/kien/rainbow_parentheses.vim.git",
+  "git://github.com/tpope/vim-fireplace.git",
+  "git://github.com/tpope/vim-classpath.git",
+  "git://github.com/tpope/vim-salve.git",
+  # git@github.com:kovisoft/slimv.git
 ]
 
 require 'fileutils'
