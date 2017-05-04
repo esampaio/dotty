@@ -5,7 +5,7 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install tools
-brew install imagemagick mercurial pwgen tmux vim watch node nvm wget ack diff-so-fancy
+brew install imagemagick mercurial pwgen tmux vim watch node nvm yarn wget ack diff-so-fancy
 
 # Install ruby dependencies
 brew install rbenv rbenv-gemset ruby-build
