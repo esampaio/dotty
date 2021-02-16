@@ -108,7 +108,7 @@ map <leader>n :call RenameFile()<cr>
 map <leader>b :CtrlPBuffer<CR>
 map <leader>f :CtrlP<CR>
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](\.git|\.hg|\.svn|app/build|app/cache|vendor)$',
+  \ 'dir':  '\v[\/](\.git|\.hg|\.svn|app/build|app/cache|vendor|node_modules|elm-stuff)$',
   \ 'file': '\.exe$\|\.so$\|\.dll$',
   \ }
 
@@ -128,3 +128,7 @@ let g:airline_powerline_fonts = 1
 
 " toggle rainbow parentheses
 au VimEnter * RainbowParenthesesToggle
+
+" Persistent undo between vim sessions
+set undofile
+set undodir=~/.vim/undodir

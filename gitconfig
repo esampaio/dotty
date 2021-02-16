@@ -1,6 +1,6 @@
 [user]
-  name = Eduardo Sampaio
-  email = eduardo@sampa.io
+	name = Eduardo Sampaio
+	email = eduardo@sampa.io
 [core]
   editor = vim
   excludesfile = ~/.gitignore
@@ -53,3 +53,5 @@
   oldHighlight = red 52
   newNormal = green
   newHighlight = green 22
+[rerere]
+  enabled = true

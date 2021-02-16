@@ -39,6 +39,10 @@ git_bundles = [
   "git://github.com/elzr/vim-json.git",
   "git://github.com/kylef/apiblueprint.vim.git",
   "git://github.com/rust-lang/rust.vim.git",
+  "git://github.com/ElmCast/elm-vim.git",
+  "git://github.com/wavded/vim-stylus.git",
+  "git://github.com/leafgarland/typescript-vim.git",
+  "git://github.com/mustache/vim-mustache-handlebars.git",
 
   "git://github.com/guns/vim-sexp.git",
   "git://github.com/tpope/vim-sexp-mappings-for-regular-people.git",
